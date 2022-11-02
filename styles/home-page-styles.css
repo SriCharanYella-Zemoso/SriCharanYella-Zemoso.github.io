@@ -1,0 +1,60 @@
+* {
+  font-family: Poppins;
+}
+
+hr {
+  width: 250px;
+}
+
+header {
+  background-color: rgb(102, 102, 102);
+}
+
+table {
+  margin: 0 auto;
+}
+
+
+.profile-pic {
+  border-radius: 40px;
+  width: auto;
+  height: 320px;
+  padding: 30px;
+}
+
+.info-name {
+  color: rgb(230, 230, 230);
+  font-size: 80px;
+  letter-spacing: 8px;
+  padding: 0 300px 0 20px;
+  margin: 0 auto;
+}
+
+.navigation {
+  background-color: rgb(140, 140, 140);
+}
+
+.nav-item {
+  padding: 10px 0 0;
+}
+
+.nav-link {
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 1px;
+  text-align: center;
+  text-decoration: none;
+  /* border-right: 2px solid rgb(199, 199, 199); */
+  color: rgb(242, 242, 242);
+  padding: 10px;
+}
+
+.nav-item.padded-item {
+  padding: 10px 0;
+}
+
+.nav-link:hover {
+  color: rgb(64, 64, 64);
+}
