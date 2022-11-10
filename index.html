@@ -1,58 +1,36 @@
-<!DOCTYPE html>
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!-- <!DOCTYPE html> 
+  to make sure for iframe
+-->
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles/home-page-styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Space+Mono&display=swap" rel="stylesheet">
-    <title>Profile</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./styles/index-styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
   </head>
-  <body>
-    <header>
-      <table>
-        <tbody>
-          <tr class="info-row">
-            <td>
-              <h1 class="info-name">Yella Sri Charan</h1>
-            </td>
-            <td>
-              <img class="profile-pic" src="./images/profile-pic.jpg" alt="Sri Charan">
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <nav class="navigation">
-        <table class="nav-table">
-          <tbody>
-            <tr class="nav-row">
-              <td class="nav-item">
-                  <a class="nav-link" href="./index.html">HOME</a>
-                  <hr>
-              </td>
-            </tr>
-            <tr class="nav-row">
-              <td class="nav-item">
-                <a class="nav-link" href="./about-me.html">ABOUT ME</a>
-                <hr>
-              </td>
-            </tr>
-            <tr class="nav-row">
-              <td class="nav-item">
-                <a class="nav-link" href="./my-gallery.html">MY GALLERY</a>
-                <hr>
-              </td>
-            </tr>
-            <tr class="nav-row">
-              <td class="nav-item padded-item">
-                <a class="nav-link" href="./contact-me.html">CONTACT ME</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </nav>
+  <body class="body-grid-container">
+    <header class="header-grid-container">  
+      <img src="./images/profile-pic.jpg" alt="Sri Charan" />
+      <div class="intro">
+        <div><span>Yella Sri Charan</span></div>
+        <nav class="nav-tabs">
+          <a href="home.html" target="frame">Home</a>
+          <a href="./about-me.html" target="frame">About me</a>
+          <a href="./my-gallery.html" target="frame">My Gallery</a>
+          <a href="./contact-me.html" target="frame">Contact me</a>
+        </nav>
+      </div>
     </header>
+    <main class="main-frame">
+      <iframe class="frame" name="frame" src="./home.html" frameborder="0"></iframe>
+    </main>
+
   </body>
 </html>

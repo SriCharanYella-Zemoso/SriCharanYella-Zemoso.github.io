@@ -1,0 +1,231 @@
+* {
+  font-family: Poppins, serif;
+  color: #333333;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+    CSS Rulesets for index.html page
+*/
+.body-grid-container {
+  display: grid;
+  background-color:#afafaf;
+  grid-template-rows: 1fr 2fr;
+  gap: 4px;
+}
+
+.header-grid-container {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(3, 15vh);
+}
+
+.header-grid-container img {
+  grid-column: 1;
+  grid-row: 1/4;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin: 0 10px 0 10px;
+}
+
+.intro {
+  grid-column: 2;
+  grid-row: 1/6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 9vh);
+}
+
+.intro span {
+  display: inline-block;
+  grid-column: 1;
+  padding-top: 5.8vh;
+  grid-row: 1/5;
+  font-size: 7vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-tabs {
+  grid-row: 5;
+  grid-column: 1;
+  margin: 0 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  gap: 8px;
+}
+
+.nav-tabs a {
+  display: block;
+  flex: 1;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 2.5vh;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.nav-tabs a:hover {
+  background-color: #bfbfbf;
+}
+
+.main-frame {
+  grid-row: 2;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.main-frame iframe {
+  flex: 1;
+}
+
+/* 
+    CSS Rulesets for home.html page
+*/
+.home-div {
+  height: 100%;
+  padding: 8em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home-div span {
+  letter-spacing: 2.5px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* 
+    CSS Rulesets for about-me.html page
+*/
+
+.aboutme {
+  display: flex;
+  height: 100%;
+  gap: 1em;
+  background-color: #afafaf;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutme div {
+  display: flex;
+  flex-flow: column nowrap;
+  font-weight: 300;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 20px 0;
+  gap: 1em;
+}
+
+.aboutme li {
+  text-align: left;
+  list-style-type: circle;
+}
+
+
+/* 
+    CSS Rulesets for my-gallery.html page
+*/
+
+.mygallery-body {
+  margin: 0;
+  padding: 0;
+  background-color: #afafaf;
+}
+
+.mygallery-image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, 300px);
+  gap: 6px;
+}
+
+.mygallery-image-grid img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* 
+    CSS Rulesets for contact-me.html page
+*/
+
+.contact {
+  display: flex;
+  height: 100%;
+  gap: 1em;
+  background-color: #afafaf;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact div {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-weight: 300;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 20px 0;
+  gap: 1em;
+}
+
+.contact div:hover {
+    background-color: #bfbfbf;
+}
+
+
+.contact div div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact i {
+    font-size: 0.6em;
+}
+
+.contact span {
+    font-weight: 400;
+    font-size: 0.6em;
+}
+
+.contact-intro {
+  font-size: 2em;
+}
+
+.contact-linkedin a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.15em;
+    font-weight: 700;
+}
+
+.contact a:hover {
+    background-color: #bfbfbf;
+}
+
+.contact-linkedin {
+  align-items: center;
+}
